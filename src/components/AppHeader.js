@@ -7,11 +7,11 @@ class AppHeader extends React.Component{
     render(){
         return(
             <div className="header"> 
-                <Header inverted as='h2'>
+                <Header inverted as='h1'>
                     <Image src="https://cdn.dribbble.com/users/109649/screenshots/954354/lightningbolt.png" />
                     <Header.Content>
                     Jason Cabrera
-                    <Header.Subheader> Sophomore at UC San Diego: Pursuing B.S. Mathematics-Computer Science </Header.Subheader>
+                    <Header.Subheader> Sophomore at UC San Diego: B.S. Mathematics-Computer Science </Header.Subheader>
                     </Header.Content>
                 </Header>
 
