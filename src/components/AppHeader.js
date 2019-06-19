@@ -11,7 +11,7 @@ class AppHeader extends React.Component{
                     <Image src="https://cdn.dribbble.com/users/109649/screenshots/954354/lightningbolt.png" />
                     <Header.Content>
                     Jason Cabrera
-                    <Header.Subheader> Sophomore at UC San Diego: B.S. Computer Science </Header.Subheader>
+                    <Header.Subheader> Junior at UC San Diego: B.S. Computer Science 2021</Header.Subheader>
                     </Header.Content>
                 </Header>
 
