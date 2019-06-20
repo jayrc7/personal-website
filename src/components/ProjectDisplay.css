@@ -1,6 +1,5 @@
-p{
-    color: white;
-    font-size: 4px;
+.button:active{
+  background: yellow;
 }
 
 h1{
@@ -8,6 +7,34 @@ h1{
     font-size: 27px;
 }
 
+.sd{
+  word-wrap: break-word;
+  text-align: left;
+}
+.link{
+  text-align: left;
+  padding-left: 8px;
+  color: teal;
+  font-size: 15px;
+}
+
+.p-title{
+  font-size: 15px;
+}
 .button{
     margin: 0.2em!important;
+}
+
+.as{
+  background-color: white;
+}
+
+.title-div{
+  padding: 0;
+  text-align: left;
+}
+.project-title{
+  color: Salmon;
+  padding-left: 8px;
+  margin-bottom: 0px;
 }
