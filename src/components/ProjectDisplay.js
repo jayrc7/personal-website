@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
 import './ProjectDisplay.css';
-import { proj } from './projects.js';
-import { Button,Container, Segment, Header, Icon, List } from 
+import { proj, tag } from './projects.js';
+import { Button,Container, Segment, Header, Label, Icon, List } from 
         'semantic-ui-react';
 
 class ProjectDisplay extends React.Component{
     state = {
         currTags: {},
-        projects: [],
+        activeProjects: [],
         currentWord: ""
     }
     
+    constructor(props){
+      super(props);
+      for( let i = 0; i < proj.projects.length; i++){
+        this.state.activeProjects.push(proj.projects[i]);
+      }
+    }
+
     toggleTag = (event, {value}) => {
         this.setState(prevState => ({active: !prevState.active} ) )
-        this.setState( {projects: [...this.state.projects, 1]} )
         this.setState( {currentWord: value} )
     }
 
     static getDerivedStateFromProps( props, state ) {
-
-    }
+        
+     }
 
     render(){
-        const {currTags, projects, currentWord, active} = this.state
+        const {currTags, activeProjects, currentWord, active} = this.state
 
         return(
             <div className="display"> 
@@ -34,61 +40,19 @@ class ProjectDisplay extends React.Component{
                 <Segment attached ="top" inverted>
                     <Header textAlign="left" content="Filter by tag:" 
                      size = "tiny"/>
-
+                    
+                    {tag.tags.map( item => 
                     <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"JQuery"}
-                     ref = {this.buttonRef} content={"JQuery"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"React"} content={"React"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Java"} content={"Java"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Python"} content={"Python"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"HTML/CSS"} content={"HTML/CSS"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Javascript"} 
-                     content={"Javascript"} onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Hackathon"} 
-                     content={"Hackathon"} onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"}
-                    className="button" value={"Firebase"} 
-                    content={"Firebase"} onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Linux"} content={"Linux"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"API"} content={"API"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={"Web"} content={"Web"} 
-                     onClick = {this.toggleTag} />
-
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                    className="button" value={"Game"} content={"Game"}
-                    active = {active} onClick = {this.toggleTag} />
-
+                     className="button" value={item}
+                     content={item} 
+                     onClick = {this.toggleTag} /> )}
+                    
                 </Segment> 
 
-                <Segment inverted attached = "bottom">
+                <Segment attached = "bottom">
                   <div className = "as" >
-                    <ProjectItem title = {proj.projects[0].name} link = {proj.projects[0].link} />
+                    {this.state.activeProjects.map( (item, i) => 
+                    <ProjectItem title = {item.name} link = {item.link} tags = {item.tags} description = {item.description}/>)}
                   </div>
                 
                 </Segment> 
@@ -106,18 +70,18 @@ class ProjectItem extends Component {
         <Segment attached = "top" clearing>
           <div className = "sd">
               <h1 className = "project-title"> {this.props.title}</h1> 
-              <a target = "_blank" className = "link" href = {this.props.link}> Github Repo </a>
+              <a target = "_blank" className = "link" href = {this.props.link}> View Github Repo >> </a>
           </div>
         </Segment>
         <Segment attached>
           <div className = "sd">
-          {proj.projects[0].tags.map((item, i) => <Button compact key = {i} color = {"teal"} content = {item} /> )}
+          {this.props.tags.map( tag => <Label className = "Tag" color = {"teal"} key = {tag} content = {tag} size = "large"/> )}
           </div>
         </Segment> 
 
         <Segment attached="bottom">
           <div className = "sd"> 
-          {proj.projects[0].description.map((item, i) => <p className = "p-title" key = {i}> {item} </p>)}
+          {this.props.description.map((item, i) => <p className = "p-title" key = {i}> {item} </p>)}
           </div>
         </Segment> 
       </Segment>

@@ -14,8 +14,16 @@ h1{
 .link{
   text-align: left;
   padding-left: 8px;
-  color: teal;
+  color: #DAA520;
   font-size: 15px;
+}
+
+.link:visited{
+  color: #DAA520;
+}
+
+.Tag{
+  margin: 0.2em! important;
 }
 
 .p-title{
