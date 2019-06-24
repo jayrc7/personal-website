@@ -22,14 +22,14 @@ var proj = {
     },
 
     {
-      "name": "Safeguard - LA Hacks 2019",
+      "name": "Safeguard - LAHacks 2019",
       "link": "https://github.com/jayrc7/safeguard",
       "description": ["Won Top 5 Overall Hack at LAHacks 2019 for a community safety app. Demoed in front of judges and all LaHacks participants.", "Developed portions of frontend using React and Semantic UI. Also dealt with backend Firebase integration.", "Configured a Twilio server to receive texts and reply with the nearest safehouse while also alerting clients' location to all community members." ],
       "tags": ["Hackathon", "Javascript", "React", "API", "Firebase", "Web"],
     },
 
     {
-      "name": "Beacon - SD Hacks 2018",
+      "name": "Beacon - SDHacks 2018",
       "link": "https://github.com/jayrc7/Beacon",
       "description": ["Developed web app that allows users to drop beacons on a map that contains contact info and description of an event.", "Implemented frontend using HERE mapping api and React, also engineered the algorithm to add beacons onto the map." ],
       "tags": ["Hackathon", "Javascript", "React", "API", "Web"],

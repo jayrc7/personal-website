@@ -63,6 +63,7 @@ class ProjectDisplay extends React.Component{
 
         return(
             <div className="display"> 
+            <br />
             <Container inverted text>
                 <Header textAlign="left"inverted as='h1'> 
                     <h1>  Projects </h1>
