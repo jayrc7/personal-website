@@ -25,7 +25,7 @@ var proj = {
       "name": "Safeguard - LAHacks 2019",
       "link": "https://github.com/jayrc7/safeguard",
       "description": ["Won Top 5 Overall Hack at LAHacks 2019 for a community safety app. Demoed in front of judges and all LaHacks participants.", "Developed portions of frontend using React and Semantic UI. Also dealt with backend Firebase integration.", "Configured a Twilio server to receive texts and reply with the nearest safehouse while also alerting clients' location to all community members." ],
-      "tags": ["Hackathon", "Javascript", "React", "Firebase"],
+      "tags": ["Hackathon", "Javascript", "React", "Twilio", "Firebase"],
     },
 
     {
