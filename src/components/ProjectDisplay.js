@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ProjectDisplay.css';
 import { proj, tag } from './projects.js';
-import { Button,Container, Segment, Header, Label, Icon, List } from 
+import { Button, Transition, Container, Segment, Header, Label, Icon, List } from 
         'semantic-ui-react';
 
 class ProjectDisplay extends React.Component{
@@ -26,17 +26,27 @@ class ProjectDisplay extends React.Component{
         const {currTags} = this.state
         currTags[value] = !currTags[value]
         this.setState(prevState => ({active: currTags[value]} ) )
-
     }
 
     static getDerivedStateFromProps( props, state ) {
+        const {currTags} = state.currTags
         if(state.initialLoad){
           state.initialLoad = false
           return {state: state.initialLoad}
         }
-
-
+        
      }
+    
+    checkVisible = tags => {
+      const {currTags} = this.state
+      for(let i = 0; i < tags.length; i++){
+        if( currTags[tags[i]] ){
+          return true;
+        }
+      }
+
+      return false;
+    }
 
     render(){
         const {currTags, activeProjects, currentWord, active} = this.state
@@ -64,7 +74,8 @@ class ProjectDisplay extends React.Component{
                   <div className = "as" >
                     {this.state.activeProjects.map( (item, i) => 
                     <ProjectItem title = {item.name} link = {item.link} 
-                    tags = {item.tags} description = {item.description}/>)}
+                    tags = {item.tags} description = {item.description}
+                    visible = {this.checkVisible(item.tags)}/>)}
                   </div>
                 
                 </Segment> 
@@ -78,6 +89,7 @@ class ProjectDisplay extends React.Component{
 class ProjectItem extends Component {
   render(){
     return (
+      <Transition visible = {this.props.visible} animation = "fade left" > 
       <Segment basic> 
         <Segment attached = "top" clearing>
           <div className = "sd">
@@ -100,6 +112,7 @@ class ProjectItem extends Component {
           </div>
         </Segment> 
       </Segment>
+      </Transition>
     )
   }
 }

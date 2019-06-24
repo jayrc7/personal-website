@@ -10,6 +10,9 @@ class App extends Component {
       <div className="App"> 
         <AppHeader />
         <ProjectDisplay />
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
   }
