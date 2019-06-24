@@ -107,7 +107,7 @@ class ProjectItem extends Component {
           <div className = "sd">
               <h1 className = "project-title"> {this.props.title}</h1> 
               <a target = "_blank" className = "link" 
-              href = {this.props.link}> View Github Rep >> </a>
+              href = {this.props.link}> View Github Repo >> </a>
           </div>
         </Segment>
         <Segment attached>
