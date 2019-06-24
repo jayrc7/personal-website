@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AppHeader.css';
-import { Icon,Header, Image } from 'semantic-ui-react';
+import { Header, Image } from 'semantic-ui-react';
 import Links from './Links';
 
 class AppHeader extends React.Component{

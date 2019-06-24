@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ProjectDisplay.css';
 import { proj, tag } from './projects.js';
-import { Button, Transition, Container, Segment, Header, Label, Icon, List } from 
+import { Button, Transition, Container, Segment, Header, Label} from 
         'semantic-ui-react';
 
 class ProjectDisplay extends React.Component{
@@ -37,7 +37,7 @@ class ProjectDisplay extends React.Component{
 
     checkEmpty = () => {
       for( let i = 0; i < tag.tags.length; i++ ){
-        if(this.state.currTags[tag.tags[i]] == true){
+        if(this.state.currTags[tag.tags[i]] === true){
           return false;
         }
       }
@@ -59,7 +59,7 @@ class ProjectDisplay extends React.Component{
     }
 
     render(){
-        const {currTags, activeProjects, currentWord, active} = this.state
+        const {currTags, activeProjects} = this.state
 
         return(
             <div className="display"> 
@@ -83,7 +83,7 @@ class ProjectDisplay extends React.Component{
 
                 <Segment attached = "bottom">
                   <div className = "as" >
-                    {this.state.activeProjects.map( (item, i) => 
+                    {activeProjects.map( (item, i) => 
                     <ProjectItem title = {item.name} link = {item.link} 
                     tags = {item.tags} description = {item.description}
                     visible = {

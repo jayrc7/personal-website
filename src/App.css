@@ -4,6 +4,8 @@
 
 body{
     background-color: Salmon;
+    background: linear-gradient(to bottom, Salmon 50%, white 50%);
+    background-image: no-repeat;
 }
 
 .App-logo {

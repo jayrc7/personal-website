@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ProjectDisplay.css';
 import { course } from './courses.js';
-import { Button, Transition, Container, Segment, Header, Label, Icon, List } from 
+import { Container, Segment, Header } from 
         'semantic-ui-react';
 
 class CourseDisplay extends React.Component{
