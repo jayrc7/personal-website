@@ -8,7 +8,7 @@ class ProjectDisplay extends React.Component{
     state = {
         currTags: {},
         activeProjects: [],
-        initialLoad: true
+        empty: true
     }
     
     constructor(props){
@@ -26,19 +26,29 @@ class ProjectDisplay extends React.Component{
         const {currTags} = this.state
         currTags[value] = !currTags[value]
         this.setState(prevState => ({active: currTags[value]} ) )
-    }
-
-    static getDerivedStateFromProps( props, state ) {
-        const {currTags} = state.currTags
-        if(state.initialLoad){
-          state.initialLoad = false
-          return {state: state.initialLoad}
+        if(!this.checkEmpty()){
+          this.setState({empty: false})
         }
         
-     }
-    
+        else{
+          this.setState({empty: true})
+        }
+    }
+
+    checkEmpty = () => {
+      for( let i = 0; i < tag.tags.length; i++ ){
+        if(this.state.currTags[tag.tags[i]] == true){
+          return false;
+        }
+      }
+
+      return true
+    }
     checkVisible = tags => {
       const {currTags} = this.state
+      if(this.state.empty){
+        return true
+      }
       for(let i = 0; i < tags.length; i++){
         if( currTags[tags[i]] ){
           return true;
@@ -75,7 +85,8 @@ class ProjectDisplay extends React.Component{
                     {this.state.activeProjects.map( (item, i) => 
                     <ProjectItem title = {item.name} link = {item.link} 
                     tags = {item.tags} description = {item.description}
-                    visible = {this.checkVisible(item.tags)}/>)}
+                    visible = {
+                      this.checkVisible(item.tags)}/>)}
                   </div>
                 
                 </Segment> 
