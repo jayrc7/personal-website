@@ -18,6 +18,9 @@ h1{
   font-size: 15px;
 }
 
+.teal{
+  color: teal;
+}
 .link:visited{
   color: #DAA520;
 }

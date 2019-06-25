@@ -13,8 +13,9 @@ class CourseDisplay extends React.Component{
                 <Header textAlign="left"inverted as='h1'> 
                     <h1>  Courses </h1>
                 </Header>
-
+                
                 <Segment>
+                  <h1 className = "teal"> Computer Science and Engineering </h1>
                   <div className = "as" >
                     {course.courses.map( (item, i) => 
                     <CourseItem title = {item.name} description = {item.description}
