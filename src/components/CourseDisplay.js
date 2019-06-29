@@ -17,11 +17,11 @@ class CourseDisplay extends React.Component{
                 <Segment>
                   <h1 className = "teal"> Computer Science and Engineering </h1>
                   <div className = "as" >
-                    {course.courses.map( (item, i) => 
+                    {course.comp.map( (item, i) => 
                     <CourseItem title = {item.name} description = {item.description}
                     />)}
                   </div>
-                
+    
                 </Segment> 
             </Container>
             </div> 

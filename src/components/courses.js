@@ -1,5 +1,5 @@
 var course = {
-  "courses": [
+  "comp": [
     {
       "name": "CSE 8A - Introduction to Computer Science: Java I",
       "description" : "Fundamental concepts of applied computer science using media computation. Exercises in the theory and practice of computer science. Hands-on experience with designing, editing, compiling, and executing programming constructs and applications."
@@ -33,6 +33,16 @@ var course = {
       "name": "CSE 30 - Computer Organization and Systems Programming",
       "description": "Introduction to organization of modern digital computers—understanding the various components of a computer and their interrelationships. Study of a specific architecture/machine with emphasis on systems programming in C and Assembly languages in a UNIX environment."
     }, 
+
+    {
+      "name": "CSE 100 - Advanced Data Structures",
+      "description": "High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and STL."
+    },
+
+    {
+      "name": "CSE 105 - Theory of Computability",
+      "description": "An introduction to the mathematical theory of computability. Formal languages. Finite automata and regular expression. Push-down automata and context-free languages. Computable or recursive functions: Turing machines, the halting problem. Undecidability."
+    }
 
   ]
 }
