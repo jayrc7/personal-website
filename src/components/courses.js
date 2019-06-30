@@ -44,6 +44,13 @@ var course = {
       "description": "An introduction to the mathematical theory of computability. Formal languages. Finite automata and regular expression. Push-down automata and context-free languages. Computable or recursive functions: Turing machines, the halting problem. Undecidability."
     }
 
+  ],
+
+  "lign": [
+    {
+      "name": "LIGN 167 - Deep Learning for Natural Language Understanding",
+      "description": "An introduction to neural network methods for analyzing linguistic data. Basic neural network architectures and optimization through backpropagation and stochastic gradient descent. Word vectors and recurrent neural networks, and their uses and limitations in modeling the structure of natural language."
+    }
   ]
 }
 
