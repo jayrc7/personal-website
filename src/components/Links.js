@@ -20,7 +20,7 @@ class Links extends React.Component{
            title="Connect with me" target="_blank"circular/>
 
           <Image src={"https://cdn3.iconfinder.com/data/icons/web-ui-3/128/Menu2-2-512.png"} 
-           as='a' title="See my resume" href="https://drive.google.com/file/d/1es4TYiSd-7f7-136S9ANrL-nhpescgXq/view?usp=sharing" 
+           as='a' title="See my resume" href="https://drive.google.com/file/d/18N9R19eJd_0mKutY0w5AhBWQWr1iZvgj/view?usp=sharing" 
            target="_blank" circular/>
         </Image.Group>
       </div> 
