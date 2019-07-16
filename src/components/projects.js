@@ -10,7 +10,7 @@ var proj = {
     {
       "name": "Live Well San Diego Market Evaluation Tool",
       "link": "https://liveweller.herokuapp.com/",
-      "description": ["Developed market evaluation tool using HTML/CSS/Javascript/JQuery, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
+      "description": ["Developed market evaluation tool for Live Well San Diego organization using HTML/CSS/Javascript/JQuery, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
       "tags": ["Javascript", "HTML/CSS", "JQuery", "Firebase"]
     },
 

@@ -45,13 +45,6 @@ var course = {
     }
 
   ],
-
-  "lign": [
-    {
-      "name": "LIGN 167 - Deep Learning for Natural Language Understanding",
-      "description": "An introduction to neural network methods for analyzing linguistic data. Basic neural network architectures and optimization through backpropagation and stochastic gradient descent. Word vectors and recurrent neural networks, and their uses and limitations in modeling the structure of natural language."
-    }
-  ]
 }
 
 export { course }
