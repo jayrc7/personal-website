@@ -14,7 +14,7 @@ class CourseDisplay extends React.Component{
                     <h1>  Courses </h1>
                 </Header>
                 
-                <Segment>
+                <Segment className = "left">
                   <h1 className = "teal"> Computer Science and Engineering </h1>
                   <div className = "as" >
                     {course.comp.map( (item, i) => 
@@ -22,7 +22,16 @@ class CourseDisplay extends React.Component{
                     />)}
                   </div>
 
+                  <h1 className = "teal"> Linguistics </h1>
+                  <div className = "as" >
+                    {course.lign.map( (item, i) => 
+                    <CourseItem title = {item.name} description = {item.description}
+                    />)}
+                  </div>
                 </Segment> 
+
+
+
             </Container>
             </div> 
         )

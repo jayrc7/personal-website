@@ -23,6 +23,11 @@ var course = {
       "name": "CSE 20 - Discrete Mathematics",
       "description" : "Basic discrete mathematical structures: sets, relations, functions, sequences, equivalence relations, partial orders, and number systems. Methods of reasoning and proofs: prepositional logic, predicate logic, induction, recursion, and pigeonhole principle. Infinite sets and diagonalization. Basic counting techniques; permutation and combinations. Applications will be given to digital logic design, elementary number theory, design of programs, and proofs of program correctness."
     },
+    
+    {
+      "name": "MATH 183 - Statistical Methods", 
+      "description": "Introduction to probability. Discrete and continuous random variables–binomial, Poisson and Gaussian distributions. Central limit theorem. Data analysis and inferential statistics: graphical techniques, confidence intervals, hypothesis tests, curve fitting."
+    },
 
     {
       "name": "CSE 21 - Mathematics for Algorithms and Systems",
@@ -45,6 +50,13 @@ var course = {
     }
 
   ],
+
+  "lign": [
+    {
+      "name": "LIGN 167 - Deep Learning for Natural Language Understanding",
+      "description": "An introduction to neural network methods for analyzing linguistic data. Basic neural network architectures and optimization through backpropagation and stochastic gradient descent. Word vectors and recurrent neural networks, and their uses and limitations in modeling the structure of natural language."
+    }
+  ]
 }
 
 export { course }
