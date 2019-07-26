@@ -11,7 +11,7 @@ class CourseDisplay extends React.Component{
             <br />
             <Container inverted text>
                 <Header textAlign="left"inverted as='h1'> 
-                    <h1>  Courses </h1>
+                    <h1> Relevant Coursework </h1>
                 </Header>
                 
                 <Segment className = "left">
