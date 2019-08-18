@@ -13,7 +13,7 @@ var proj = {
       "name": "Live Well San Diego Market Evaluation Tool",
       "link": "https://liveweller.herokuapp.com/",
 	  "website":"https://liveweller.herokuapp.com",
-	  "organization": "UCSD Triton Software Engineering",
+	  "organization": "Triton Software Engineering",
       "description": ["Triton Software Engineering web app project, worked in a team of 4 with weekly deadlines.","Developed market evaluation tool for Live Well San Diego organization using HTML/CSS/Javascript/JQuery/Bootstrap, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
       "tags": ["Organization", "Javascript", "HTML/CSS", "JQuery", "Firebase", "Bootstrap"]
     },
