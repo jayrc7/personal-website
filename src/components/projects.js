@@ -3,14 +3,14 @@ var proj = {
     {
       "name": "Personal Website",
       "link": "https://github.com/jayrc7/personal-website",
-      "description": ["Created a personal portfolio site in React and Semantic UI, hosted on Github Pages.", "Wrote custom components in React for dynamic filtering of projects by tags."],
+      "description": ["Created a personal portfolio site in React and Semantic UI, hosted on Github Pages.", "Wrote custom components in React for dynamic filtering of projects by tags and to display courses taken."],
       "tags": ["Javascript", "React"]
     },
 
     {
       "name": "Live Well San Diego Market Evaluation Tool",
       "link": "https://liveweller.herokuapp.com/",
-      "description": ["Developed market evaluation tool for Live Well San Diego organization using HTML/CSS/Javascript/JQuery, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
+      "description": ["Project a part of Triton Software Engineering, worked in a team of 4 with weekly deadlines.","Developed market evaluation tool for Live Well San Diego organization using HTML/CSS/Javascript/JQuery, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
       "tags": ["Organization", "Javascript", "HTML/CSS", "JQuery", "Firebase"]
     },
 
