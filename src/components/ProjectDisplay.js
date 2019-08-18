@@ -74,9 +74,9 @@ class ProjectDisplay extends React.Component{
                      size = "tiny"/>
                     
                     {tag.tags.map( item => 
-                    <Button toggle compact size = "tiny" color = {"teal"} 
-                     className="button" value={item} active = {currTags[item]}
-                     content={item} key = {item}
+                    <Button toggle compact size = "tiny" color = "teal"
+                     className="button" value={item} 
+                     content={item} key = {item} basic = {!currTags[item]}
                      onClick = {this.toggleTag} /> )}
                     
                 </Segment> 

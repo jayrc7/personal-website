@@ -76,5 +76,5 @@ var proj = {
   ]
 }
 
-var tag = { "tags": ["Organization", "Hackathon", "Personal", "Course", "JQuery", "React", "Semantic Ui", "Bootstrap", "Java", "Python", "HTML/CSS", "Javascript", "Firebase", "Linux", "Twilio", "JavaFX", "PyGTK", "Game"] }
+var tag = { "tags": ["Organization", "Hackathon", "Personal", "Course", "JQuery", "React", "Semantic UI", "Bootstrap", "Java", "Python", "HTML/CSS", "Javascript", "Firebase", "Linux", "Twilio", "JavaFX", "PyGTK", "Game"] }
 export { proj, tag }
