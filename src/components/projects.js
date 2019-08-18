@@ -33,7 +33,7 @@ var proj = {
 	  "website":"",
 	  "organization":"LA Hacks 2019 (Won Top 5 Overall Hack)",
       "description": ["Won Top 5 Overall Hack at LAHacks 2019 for a community safety app. Demoed in front of judges and all LaHacks participants.", "Developed portions of frontend using React and Semantic UI. Also dealt with backend Firebase integration.", "Configured a Twilio server to receive texts and reply with the nearest safehouse while also alerting clients' location to all community members." ],
-      "tags": ["Hackathon", "Javascript", "React", "Twilio", "Firebase"],
+      "tags": ["Hackathon", "Personal", "Javascript", "React", "Twilio", "Firebase"],
     },
 
     {
@@ -42,7 +42,7 @@ var proj = {
 	  "website": "",
 	  "organization":"SD Hacks 2018",
       "description": ["Developed web app that allows users to drop beacons on a map that contains contact info and description of an event.", "Implemented frontend using HERE mapping api and React, also engineered the algorithm to add beacons onto the map." ],
-      "tags": ["Hackathon", "Javascript", "React"],
+      "tags": ["Hackathon", "Personal", "Javascript", "React"],
     },
 
 	{
