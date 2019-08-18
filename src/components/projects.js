@@ -15,7 +15,7 @@ var proj = {
 	  "website":"https://liveweller.herokuapp.com",
 	  "organization": "Triton Software Engineering",
       "description": ["Triton Software Engineering web app project, worked in a team of 4 with weekly deadlines.","Developed market evaluation tool for Live Well San Diego organization using HTML/CSS/Javascript/JQuery/Bootstrap, configured database to push/pull client responses using Firebase.", "Engineered and tested algorithm that handles market evaluations.", "Implemented dynamic front end using JQuery."],
-      "tags": ["Organization", "Javascript", "HTML/CSS", "JQuery", "Firebase", "Bootstrap"]
+      "tags": ["Organization", "Javascript", "HTML/CSS", "JQuery", "Firebase", "Bootstrap", "Demo"]
     },
 
     {
@@ -24,7 +24,7 @@ var proj = {
 	  "website":"https://www.youtube.com/watch?v=GVmKS1qHUqY",
 	  "organization":"",
       "description": ["Developer and Co-creator for Linux note taking app.", "Engineered algorithms in order to create, rename, edit, and delete notebooks/notes using knowledge learned from data structures course.", "Developed frontend using PyGTK api, from the most notable sidebar menu that facilitates the client's note taking experience to the popups that deal with it's designated purpose e.g. creating a notebook." ],
-      "tags": ["Personal", "Python", "PyGTK", "Linux"],
+      "tags": ["Personal", "Python", "PyGTK", "Linux", "Demo"],
     },
 
     {
@@ -51,7 +51,7 @@ var proj = {
 	  "website": "https://www.youtube.com/watch?v=vOTnji-uVtM",
 	  "organization":"",
 	  "description": ["Implemented classic 2048 game that took all the app markets by storm where the objective is to combine matching tiles until the 2048 tile is reached.", "JavaFX API for frontend and Java for backend.", "Unable to post github repo due to academic integrity rules :("],
-	  "tags": ["Course", "Java", "JavaFX", "Game"],
+	  "tags": ["Course", "Java", "JavaFX", "Game", "Demo"],
 	},
 
     {
@@ -60,7 +60,7 @@ var proj = {
 	  "website":"https://www.youtube.com/watch?v=n9ZVauq4Cp8",
 	  "organization":"Personal Project",
       "description": ["Implemented classic game where player must eliminate all bricks by reflecting the ball off of a paddle.", "JavaFX API for frontend and Java for backend." ],
-      "tags": ["Personal", "Java", "JavaFX","Game"],
+      "tags": ["Personal", "Java", "JavaFX","Game", "Demo"],
     },
 
 	{
@@ -69,12 +69,13 @@ var proj = {
 	  "website":"https://www.homecastlepainting.com",
 	  "organization":"",
 	  "description": ["Created static website for my fathers local painting company using HTML/CSS/JS.", "Implemented an original design to give the website a sense of professionalism and simplicity while showing the painting company's craft.", "Collaborated with a team member to discuss all design strategies."],
-	  "tags": ["Personal", "HTML/CSS", "Bootstrap"],
+	  "tags": ["Personal", "HTML/CSS", "Bootstrap", "Demo"],
 	}
 
 
   ]
 }
 
-var tag = { "tags": ["Organization", "Hackathon", "Personal", "Course", "JQuery", "React", "Semantic UI", "Bootstrap", "Java", "Python", "HTML/CSS", "Javascript", "Firebase", "Linux", "Twilio", "JavaFX", "PyGTK", "Game"] }
+var tag = { "tags": ["Bootstrap", "Course", "Demo", "Firebase", "Game", "Hackathon", "HTML/CSS", "Java", "JavaFX", "Javascript", "JQuery", "Linux", "Organization", "Personal", "PyGTK", "Python", "React", "Semantic UI", "Twilio"]}
+
 export { proj, tag }
