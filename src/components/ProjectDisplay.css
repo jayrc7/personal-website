@@ -3,7 +3,7 @@
 }
 
 h1{
-    color: Gold;
+    color: #DAA520;
     font-size: 27px;
 }
 
@@ -20,6 +20,7 @@ h1{
 
 .teal{
   color: teal;
+  font-size: 25px;
 }
 .link:visited{
   color: #DAA520;
@@ -48,4 +49,14 @@ h1{
   color: Salmon;
   padding-left: 8px;
   margin-bottom: 0px;
+  font-size: 23px;
+}
+
+.project-type{
+  color: teal;
+  font-size: 20px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  text-align: left;
+  padding-left: 8px;
 }

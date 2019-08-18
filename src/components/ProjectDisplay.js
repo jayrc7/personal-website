@@ -84,8 +84,8 @@ class ProjectDisplay extends React.Component{
                 <Segment attached = "bottom">
                   <div className = "as" >
                     {activeProjects.map( (item, i) => 
-                    <ProjectItem title = {item.name} key = {i} link = {item.link} 
-                    tags = {item.tags} description = {item.description}
+                    <ProjectItem title = {item.name} key = {i} link = {item.link} org = {item.organization}
+                    tags = {item.tags} description = {item.description} website = {item.website}
                     visible = {
                       this.checkVisible(item.tags)}/>)} 
                   </div>
@@ -106,8 +106,17 @@ class ProjectItem extends Component {
         <Segment attached = "top" clearing>
           <div className = "sd">
               <h1 className = "project-title"> {this.props.title}</h1> 
-              <a target = "_blank" rel="noopener noreferrer" className = "link" 
-              href = {this.props.link}> View Github Repo >> </a>
+				
+			  {this.props.org === "" ? <h2 className = "project-type"> Personal Project </h2> : <h2 className = "project-type"> {this.props.org} </h2>}
+
+
+			  {this.props.link === "" ? "" : 
+                 <a target = "_blank" rel="noopener noreferrer" className = "link" 
+                 href = {this.props.link}> View Github Repo >> </a>
+			  }
+			  {(this.props.link === "" || this.props.website === "") ? "" : <br/>}
+			  <a target="_blank" rel = "noopener noreferrer" className = "link"
+			  href = {this.props.website}> {this.props.website === "" ? "" : "View Demo >>"} </a>
           </div>
         </Segment>
         <Segment attached>
