@@ -27,12 +27,6 @@ var course = {
       "description" : "Basic discrete mathematical structures: sets, relations, functions, sequences, equivalence relations, partial orders, and number systems. Methods of reasoning and proofs: prepositional logic, predicate logic, induction, recursion, and pigeonhole principle. Infinite sets and diagonalization. Basic counting techniques; permutation and combinations. Applications will be given to digital logic design, elementary number theory, design of programs, and proofs of program correctness."
     },
 
-
-    {
-      "name": "MATH 183 - Statistical Methods", 
-      "description": "Introduction to probability. Discrete and continuous random variables–binomial, Poisson and Gaussian distributions. Central limit theorem. Data analysis and inferential statistics: graphical techniques, confidence intervals, hypothesis tests, curve fitting."
-    },
-
     {
       "name": "CSE 21 - Mathematics for Algorithms and Systems",
       "description" : "Covers the discrete mathematical tools needed to analyze algorithms and systems. Enumerative combinatorics: basic counting principles, inclusion-exclusion, and generating functions. Matrix notation. Applied discrete probability. Finite automata."
@@ -54,7 +48,25 @@ var course = {
     }
  
 
+  ],
+
+  "math": [
+  	{
+	  "name": "MATH 18 - Linear Algebra",
+	  "description": "Matrix algebra, Gaussian elimination, determinants. Linear and affine subspaces, bases of Euclidean spaces. Eigenvalues and eigenvectors, quadratic forms, orthogonal matrices, diagonalization of symmetric matrices."
+	},
+
+	{
+	  "name": "MATH 20C - Calculus and Analytic Geometry for Science and Engineering",
+	  "description": "Vector geometry, vector functions and their derivatives. Partial differentiation. Maxima and minima. Double integration."
+	},
+
+	{
+	  "name": "MATH 183 - Statistical Methods",
+	  "description": "Introduction to probability. Discrete and continuous random variables–binomial, Poisson and Gaussian distributions. Central limit theorem. Data analysis and inferential statistics: graphical techniques, confidence intervals, hypothesis tests, curve fitting."
+	}
   ]
+
 }
 
 export { course }
