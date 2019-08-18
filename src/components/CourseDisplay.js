@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ProjectDisplay.css';
 import { course } from './courses.js';
 import { Container, Segment, Header } from 
@@ -37,7 +37,7 @@ class CourseDisplay extends React.Component{
 }
 
 
-class CourseItem extends Component {
+class CourseItem extends React.Component {
   render(){
     return (
       <Segment basic> 

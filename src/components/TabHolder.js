@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProjectDisplay from './ProjectDisplay';
 import CourseDisplay from './CourseDisplay';
 import { Tab } from 'semantic-ui-react'

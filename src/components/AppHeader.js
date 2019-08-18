@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './AppHeader.css';
 import { Header, Image } from 'semantic-ui-react';
 import Links from './Links';

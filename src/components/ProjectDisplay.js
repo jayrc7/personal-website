@@ -64,9 +64,9 @@ class ProjectDisplay extends React.Component{
         return(
             <div className="display"> 
             <br />
-            <Container inverted text>
-                <Header textAlign="left"inverted as='h1'> 
-                    <h1>  Projects </h1>
+            <Container inverted="true" text>
+                <Header textAlign="left"inverted> 
+                   <h1> Projects </h1>
                 </Header>
 
                 <Segment attached ="top" inverted>
@@ -76,7 +76,7 @@ class ProjectDisplay extends React.Component{
                     {tag.tags.map( item => 
                     <Button toggle compact size = "tiny" color = {"teal"} 
                      className="button" value={item} active = {currTags[item]}
-                     content={item} 
+                     content={item} key = {item}
                      onClick = {this.toggleTag} /> )}
                     
                 </Segment> 
@@ -84,10 +84,10 @@ class ProjectDisplay extends React.Component{
                 <Segment attached = "bottom">
                   <div className = "as" >
                     {activeProjects.map( (item, i) => 
-                    <ProjectItem title = {item.name} link = {item.link} 
+                    <ProjectItem title = {item.name} key = {i} link = {item.link} 
                     tags = {item.tags} description = {item.description}
                     visible = {
-                      this.checkVisible(item.tags)}/>)}
+                      this.checkVisible(item.tags)}/>)} 
                   </div>
                 
                 </Segment> 
@@ -106,7 +106,7 @@ class ProjectItem extends Component {
         <Segment attached = "top" clearing>
           <div className = "sd">
               <h1 className = "project-title"> {this.props.title}</h1> 
-              <a target = "_blank" className = "link" 
+              <a target = "_blank" rel="noopener noreferrer" className = "link" 
               href = {this.props.link}> View Github Repo >> </a>
           </div>
         </Segment>
