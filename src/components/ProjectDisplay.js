@@ -114,6 +114,7 @@ class ProjectItem extends Component {
                  <a target = "_blank" rel="noopener noreferrer" className = "link" 
                  href = {this.props.link}> View Github Repo >> </a>
 			  }
+
 			  {(this.props.link === "" || this.props.website === "") ? "" : <br/>}
 			  <a target="_blank" rel = "noopener noreferrer" className = "link"
 			  href = {this.props.website}> {this.props.website === "" ? "" : "View Demo >>"} </a>
