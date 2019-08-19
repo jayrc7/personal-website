@@ -49,7 +49,7 @@ var proj = {
 	  "name": "2048", 
 	  "link": "",
 	  "website": "https://www.youtube.com/watch?v=vOTnji-uVtM",
-	  "organization":"",
+	  "organization":"Course Project",
 	  "description": ["Implemented classic 2048 game that took all the app markets by storm where the objective is to combine matching tiles until the 2048 tile is reached.", "JavaFX API for frontend and Java for backend.", "Unable to post github repo due to academic integrity rules :("],
 	  "tags": ["Course", "Java", "JavaFX", "Game", "Demo"],
 	},
