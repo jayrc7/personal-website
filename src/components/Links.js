@@ -12,7 +12,7 @@ class Links extends React.Component{
       <div className="links"> 
         <Image.Group size = "mini">
           <Image src='email-vector.png' 
-           as='a' href="mailto:cabrerajason7@gmail.com" target="_blank" 
+           as='a' href="mailto:cabrerajason7@gmail.com" target="_top" rel="noopener noreferrer"
            title="Email me" circular/>
 
           <Image src='github.jpg'
