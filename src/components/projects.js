@@ -36,15 +36,6 @@ var proj = {
       "tags": ["Hackathon", "Personal", "Javascript", "React", "Twilio", "Firebase"],
     },
 
-    {
-      "name": "Beacon",
-      "link": "https://github.com/jayrc7/Beacon",
-	  "website": "",
-	  "organization":"SD Hacks 2018",
-      "description": ["Developed web app that allows users to drop beacons on a map that contains contact info and description of an event.", "Implemented frontend using HERE mapping api and React, also engineered the algorithm to add beacons onto the map." ],
-      "tags": ["Hackathon", "Personal", "Javascript", "React"],
-    },
-
 	{
 	  "name": "2048", 
 	  "link": "",
@@ -62,16 +53,6 @@ var proj = {
       "description": ["Implemented classic game where player must eliminate all bricks by reflecting the ball off of a paddle.", "JavaFX API for frontend and Java for backend." ],
       "tags": ["Personal", "Java", "JavaFX","Game", "Demo"],
     },
-
-	{
-	  "name": "Home Castle Painting Website",
-	  "link": "https://github.com/home-castle/home-castle.github.io",
-	  "website":"https://www.homecastlepainting.com",
-	  "organization":"",
-	  "description": ["Created static website for my fathers local painting company using HTML/CSS/JS.", "Implemented an original design to give the website a sense of professionalism and simplicity while showing the painting company's craft.", "Collaborated with a team member to discuss all design strategies."],
-	  "tags": ["Personal", "HTML/CSS", "Bootstrap", "Demo"],
-	}
-
 
   ]
 }

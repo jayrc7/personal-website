@@ -22,12 +22,6 @@ class CourseDisplay extends React.Component{
                     />)}
                   </div>
 
-				  <h1 className = "teal"> Mathematics </h1>
-                  <div className = "as" >
-                    {course.math.map( (item, i) => 
-                    <CourseItem title = {item.name} description = {item.description}
-                    />)}
-                  </div>
                 </Segment>
 
             </Container>
