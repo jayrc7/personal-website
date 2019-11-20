@@ -1,9 +1,11 @@
 import React from 'react';
 import ProjectDisplay from './ProjectDisplay';
 import CourseDisplay from './CourseDisplay';
+import AboutDisplay from './AboutDisplay';
 import { Tab } from 'semantic-ui-react'
 
 const panes = [ 
+ // { menuItem: 'About', render: () => <Tab.Pane attached = {true}> <AboutDisplay /> </Tab.Pane>	},
   { menuItem: 'Projects', render: () => <Tab.Pane attached = {true}> <ProjectDisplay /> </Tab.Pane> },
   { menuItem: 'Courses', render: () => <Tab.Pane attached = {true}> <CourseDisplay /> </Tab.Pane> }
 ]
