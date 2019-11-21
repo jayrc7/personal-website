@@ -12,7 +12,7 @@ class AppHeader extends React.Component{
             <Header.Content>
               Jason Cabrera
               <Header.Subheader> 
-                Junior at UC San Diego: B.S. Computer Science 
+                Junior at UC San Diego: B.S. Computer Science
               </Header.Subheader>
             </Header.Content>
         </Header>
