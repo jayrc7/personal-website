@@ -7,6 +7,18 @@
 	color: Salmon;
 }
 
-.p-titl {
+.p-title {
 	font-size: 17px;
+}
+
+.skill {
+	text-align: left;
+	color: black;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.Teal {
+	color: teal;
 }
