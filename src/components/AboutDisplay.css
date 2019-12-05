@@ -22,3 +22,13 @@
 .Teal {
 	color: teal;
 }
+
+a {
+	text-align: left;
+}
+
+.link-title{
+	color: teal;
+	font-size: 22px;
+	text-align: left;
+}
