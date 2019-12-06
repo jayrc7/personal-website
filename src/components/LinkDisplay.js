@@ -14,7 +14,7 @@ class LinkDisplay extends React.Component{
 							<h1> Links </h1>
 						</Header>
 					<a className="link-title" target="_blank" href="https://www.ucsd.edu/catalog/curric/CSE-ug.html"> Major Requirements >>> </a>
-					<p className="p-title"> Feel free to look into my major requirements! Looking forward to completing them so that I can gain experience and be prepared for the industry. </p>
+					<p className="p-title"> Feel free to look into my major requirements! </p>
 					<br/>
 
 					<a className="link-title" target="_blank" href="http://tse.ucsd.edu/"> Triton Software Engineering Website >>> </a>
