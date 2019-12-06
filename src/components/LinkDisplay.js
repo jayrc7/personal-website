@@ -14,7 +14,7 @@ class LinkDisplay extends React.Component{
 							<h1> Links </h1>
 						</Header>
 					<a className="link-title" target="_blank" href="https://www.ucsd.edu/catalog/curric/CSE-ug.html"> Major Requirements >>> </a>
-					<p className="p-title"> Feel free to look into my major requirements! </p>
+					<p className="p-title"> Feel free to look into my major requirements. These courses are preparing me for a career in software engineering.</p>
 					<br/>
 
 					<a className="link-title" target="_blank" href="http://tse.ucsd.edu/"> Triton Software Engineering Website >>> </a>
@@ -25,7 +25,7 @@ class LinkDisplay extends React.Component{
 					<br/>
 
 					<a className = "link-title" target = "_blank" href="https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos/"> MVC Architecture >>> </a>
-					<p className="p-title"> The MVC architecture describes a very popular structure for an application. It stands for Model-View-Controller. You can't just wing an application for an deployable web app. Here's a very high level intro to what the MVC architecture entails. </p>
+					<p className="p-title"> The MVC architecture describes a very popular structure for an application. It stands for Model-View-Controller. You can't just wing an application for a deployable web app, there has to be a structure to it. Here's a very high level intro to what the MVC architecture entails. </p>
 					<br/>
 
 					<a className = "link-title" target ="_blank" href="https://steelkiwi.com/blog/collaboration-is-a-key-to-project-success/"> Collaboration in Software Engineering >>> </a>
