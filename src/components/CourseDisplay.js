@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProjectDisplay.css';
-import { course } from './courses.js';
+import '../css/ProjectDisplay.css';
+import { course } from '../content/courses.js';
 import { Container, Segment, Header } from 
         'semantic-ui-react';
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './AboutDisplay.css';
-import './ProjectDisplay.css';
-import { proj, tag } from './projects.js';
+import '../css/AboutDisplay.css';
+import '../css/ProjectDisplay.css';
+import { proj, tag } from '../content/projects.js';
 import { Container, Header, Segment } from 'semantic-ui-react';
 
 class AboutDisplay extends React.Component {
@@ -33,7 +33,7 @@ class AboutDisplay extends React.Component {
 					<h1> Experience </h1>
 				</Header>
 				
-				<ExperienceItem title="Bentley Systems - Incoming Software Engineer Intern" loc="San Diego, California" date="Summer 2020" description="I'm excited to be at Bentley Systems this upcoming summer as a Software Engineer Intern! Looking forward to developing software for company that promotes the safety of infrastructure around the world. More details to come." />
+				<ExperienceItem title="Bentley Systems - Incoming Software Engineer Intern" loc="San Diego, California" date="Summer 2020" description="I'm excited to be at Bentley Systems this upcoming summer as a Software Engineer Intern! Looking forward to developing software for a company that promotes the safety of infrastructure around the world. More details to come." />
 				<ExperienceItem title="Triton Software Engineering - Software Developer"
 					loc="UC San Diego" date="Fall 2018 - Spring 2019" description="Worked in a team of four to develop a market evaluation tool for Live Well San Diego, a local health organization. The purpose of our tool is to give customers a platform where they can provide feedback for markets and to help market owners reflect and act on said feedback in order to deliver the best experience to their customers. Implementation details listed in project section." />
 			</Container>

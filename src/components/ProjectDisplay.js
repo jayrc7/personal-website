@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './ProjectDisplay.css';
-import { proj, tag } from './projects.js';
+import '../css/ProjectDisplay.css';
+import { proj, tag } from '../content/projects.js';
 import { Button, Transition, Container, Segment, Header, Label} from 
         'semantic-ui-react';
 

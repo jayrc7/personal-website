@@ -1,5 +1,5 @@
 import React from 'react';
-import './Links.css';
+import '../css/Links.css';
 import { Image } from 'semantic-ui-react';
 
 class Links extends React.Component{
