@@ -24,7 +24,7 @@ class Links extends React.Component{
            title="Connect with me" target="_blank"circular/>
 
           <Image src='Menu2-2-512.png' 
-           as='a' title="See my resume" href="https://drive.google.com/file/d/1zhsVSwVqItb_chQFfnfb8jMuzI21Xx1d/view?usp=sharing" 
+           as='a' title="See my resume" href="https://drive.google.com/file/d/1TZDRg3VWEzbiKPF6ptmq-mCXffQOZJFZ/view?usp=sharing" 
            target="_blank" circular/>
         </Image.Group>
       </div> 

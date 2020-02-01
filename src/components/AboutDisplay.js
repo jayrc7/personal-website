@@ -33,7 +33,6 @@ class AboutDisplay extends React.Component {
 					<h1> Experience </h1>
 				</Header>
 				
-				<ExperienceItem title="Bentley Systems - Incoming Software Engineer Intern" loc="San Diego, California" date="Summer 2020" description="More details to come." />
 				<ExperienceItem title="Triton Software Engineering - Software Developer"
 					loc="UC San Diego" date="Fall 2018 - Spring 2019" description="Worked in a team of four to develop a market evaluation tool for Live Well San Diego, a local health organization. The purpose of our tool is to give customers a platform where they can provide feedback for markets and to help market owners reflect and act on said feedback in order to deliver the best experience to their customers. Implementation details listed in project section." />
 			</Container>
