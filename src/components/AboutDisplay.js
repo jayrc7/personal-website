@@ -13,7 +13,7 @@ class AboutDisplay extends React.Component {
 				<Header textAlign="left"inverted as='h1'>
 					<h1> Welcome to my Portfolio! </h1>
 				</Header>
-			<p className = "about-p"> I'm a third year currently working towards a Computer Science Major and Mathematics Minor at the University of California, San Diego. I am a Christian as well as a nature, soccer, and movie enthusiast that likes to spend time with friends and family. I'm also a part of on campus organizations such as Triton Software Engineering where I get to be involved in the development of software products for non profit organizations and Triton Navigators, which is a collegiate Christian fellowship that allows me to express my faith with others. While being involved in university coursework and organizations, I have dived into personal projects and have participated in hackathons to gain more experience in software development. Feel free to look around my website. If you have any questions, concerns, feedback please let me know! </p>
+			<p className = "about-p"> I'm a third year currently working towards a Computer Science degree at the University of California, San Diego. Thanks for stopping by and feel free to look around my website. If you have any questions, concerns, feedback please let me know! </p>
 			</Container>
 			<br />
 			<br />
