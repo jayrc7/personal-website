@@ -1,26 +1,24 @@
 import React from 'react';
 import '../css/AppHeader.css';
 import { Header, Image } from 'semantic-ui-react';
-import Links from './Links';
 
 class AppHeader extends React.Component{
   render(){
     return(
       <div className="header"> 
-        <Header inverted as='h1'>
-          <Image src="https://cdn.dribbble.com/users/109649/screenshots/954354/lightningbolt.png" />
-            <Header.Content>
-              Jason Cabrera
-              <Header.Subheader> 
-                Junior at UC San Diego: B.S. Computer Science
-              </Header.Subheader>
-            </Header.Content>
-        </Header>
+		  <h1 className="title"> Jason Cabrera </h1>
+		  <h1 className="subtitle"> B.S. Computer Science major at UC San Diego, graduating in Summer 2021.</h1>
+		  <div className="nav">
+		  	 <a className="navlink" href="mailto:jrcabrer@ucsd.edu" title="Email Me" target="_top" rel="noopener noreferrer"> Email </a>
+			 <a className="navlink" href="https://github.com/jayrc7" title="Connect with me" target="_blank"> Github </a>
+			 <a className="navlink" href="https://www.linkedin.com/in/jasonrcabrera" title="Check out my repos"target="_blank"> LinkedIn </a>
+			 <a className="navlink" href="https://drive.google.com/file/d/1TZDRg3VWEzbiKPF6ptmq-mCXffQOZJFZ/view?usp=sharing" target="_blank" title="See my resume"> Resume </a>
+		  </div>
 
-        <Links />
+		  <br/>
       </div>
     )
   }
 }
 
-export default AppHeader
+export default AppHeader;

@@ -3,7 +3,7 @@
 }
 
 h1{
-    color: #DAA520;
+    color: grey;
     font-size: 27px;
 }
 
@@ -46,14 +46,21 @@ h1{
   text-align: left;
 }
 .project-title{
-  color: Salmon;
+  color: black;
+  padding-left: 8px;
+  margin-bottom: 0px;
+  font-size: 23px;
+}
+
+.course-title {
+  color: grey;
   padding-left: 8px;
   margin-bottom: 0px;
   font-size: 23px;
 }
 
 .project-type{
-  color: #DAA520;
+  color:grey;
   font-size: 20px;
   margin-top: -1px;
   margin-bottom: -1px;
