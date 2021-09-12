@@ -62,7 +62,7 @@ class ProjectDisplay extends React.Component{
         const {currTags, activeProjects} = this.state
 
         return(
-            <div className="display"> 
+            <div style={{marginTop: '30px'}} className="display"> 
             <br />
             <Container inverted="true" text>
                 <Header textAlign="left"inverted> 
@@ -138,4 +138,4 @@ class ProjectItem extends Component {
     )
   }
 }
-export default ProjectDisplay
+export default ProjectDisplay;

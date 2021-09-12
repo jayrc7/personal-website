@@ -5,7 +5,17 @@
 }
 
 body {
-	background-color: lightGrey;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Navbar {
+  padding-top: 20px;
+}
+
+.NavLink {
+  margin-right: 10px;
+  font-size: 15px;
 }
 
 .App-header {
