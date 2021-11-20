@@ -44,6 +44,7 @@ class ProjectDisplay extends React.Component{
 
       return true
     }
+
     checkVisible = tags => {
       const {currTags} = this.state
       if(this.state.empty){
@@ -66,10 +67,10 @@ class ProjectDisplay extends React.Component{
             <br />
             <Container inverted="true" text>
                 <Header textAlign="left"inverted> 
-                   <h1> Projects </h1>
+                   <h1 className="projects-title"> Projects </h1>
                 </Header>
 
-                <Segment attached ="top" inverted>
+                <Segment attached="top" inverted>
                     <Header textAlign="left" content="Filter by tag:" 
                      size = "tiny"/>
                     
@@ -109,8 +110,7 @@ class ProjectItem extends Component {
 				
 			  {this.props.org === "" ? <h2 className = "project-type"> Personal Project </h2> : <h2 className = "project-type"> {this.props.org} </h2>}
 
-
-			  {this.props.link === "" ? "" : 
+			  {this.props.link === "" ? "" :
                  <a target = "_blank" rel="noopener noreferrer" className = "link" 
                  href = {this.props.link}> View Github Repo >> </a>
 			  }

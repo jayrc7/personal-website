@@ -2,11 +2,6 @@
   background: yellow;
 }
 
-h1{
-    color: grey;
-    font-size: 27px;
-}
-
 .sd{
   word-wrap: break-word;
   text-align: left;
@@ -54,6 +49,11 @@ h1{
   padding-left: 8px;
   margin-bottom: 0px;
   font-size: 23px;
+}
+
+.projects-title {
+  color: grey;
+  font-size: 27px;
 }
 
 .project-type{
