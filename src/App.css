@@ -3,11 +3,6 @@ body {
   margin: 0 auto;
 }
 
-.header{
-    padding-top: 30px;
-    margin: auto;
-}
-
 .icon {
     height: 2.5vw;
     border-radius: 50%;
@@ -27,17 +22,16 @@ body {
 .title {
     color: black;
     font-size: 40px;
+    padding-top: 30px;
 }
 
 .subtitle {
-    margin-top: -10px;
     font-size: 25px;
     color: grey;
 }
 
-.about-title {
-    font-size: 25px;
-    color: grey;
+.reduced-margin-top {
+    margin-top: -10px;
 }
 
 /* tablet in horizontal mode */
@@ -63,10 +57,6 @@ body {
     .subtitle {
         font-size: 3vw;
     }
-
-    .about-title {
-        font-size: 3vw;
-    }
 }
 
 /* tablet in portrait mode */
@@ -89,10 +79,6 @@ body {
     }
 
     .subtitle {
-        font-size: 4vw;
-    }
-
-    .about-title {
         font-size: 4vw;
     }
 
@@ -141,11 +127,6 @@ body {
     .title {
         font-size: 8vw;
     }
-
-    .about-title {
-        margin-top: -8px;
-        font-size: 6vw;
-    }
 }
 
 /* phone in landscape mode */
@@ -156,9 +137,5 @@ body {
 
     .title {
         font-size: 4vw;
-    }
-
-    .about-title {
-        margin-top: -10px;
     }
 }
