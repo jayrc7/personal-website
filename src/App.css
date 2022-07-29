@@ -1,3 +1,6 @@
+p {
+    font-size: 20px;
+}
 body {
   width: 50%;
   margin: 0 auto;
@@ -20,7 +23,7 @@ body {
 
 .NavLink {
   margin-right: 3vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 
@@ -44,10 +47,6 @@ body {
 @media only screen and (max-height: 1200px) and (max-width: 1400px) {
     p {
         font-size: 1.6vw;
-    }
-
-    .NavLink {
-        font-size: 2.5vw;
     }
 
     .icon {
@@ -77,11 +76,6 @@ body {
 
     .Navbar {
         padding-top: 9vw;
-    }
-
-    .NavLink {
-        font-size: 3.5vw;
-        margin-right: 6vw;
     }
 
     .title {
@@ -128,6 +122,7 @@ body {
 
     .NavLink {
         font-size: 5vw;
+        margin-right: 6vw;
     }
 
     p {
@@ -143,7 +138,6 @@ body {
     }
 
     .about-title {
-        margin-top: -8px;
         font-size: 6vw;
     }
 }

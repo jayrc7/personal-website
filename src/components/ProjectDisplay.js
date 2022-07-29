@@ -65,10 +65,10 @@ class ProjectDisplay extends React.Component{
         return(
             <div style={{marginTop: '30px'}} className="display"> 
             <br />
+            <Header textAlign="left"inverted>
+                <h1 className="projects-title"> Projects </h1>
+            </Header>
             <Container inverted="true" text>
-                <Header textAlign="left"inverted> 
-                   <h1 className="projects-title"> Projects </h1>
-                </Header>
 
                 <Segment attached="top" inverted>
                     <Header textAlign="left" content="Filter by tag:" 
