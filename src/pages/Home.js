@@ -9,6 +9,7 @@ class Home extends React.Component {
 				<div className="header">
 					<h1 className="title"> Jason Cabrera </h1>
 					<h1 className="subtitle"> Software Engineer at General Motors </h1>
+					<h1 className="subtitle"> Current Master's Student at UT Austin</h1>
 					<div>
 						<a title='Check out my projects' href='https://github.com/jayrc7' target='_blank'><img className='icon' src='githubicon.jpg' /></a>
 						<a title='Contact me via email' href='mailto:jrcabrer@ucsd.edu' target='_blank'><img className='icon' src='emailicon.png' /></a>
@@ -19,8 +20,8 @@ class Home extends React.Component {
 				</div>
 
 				<h1 className="about-title"> About Me </h1>
-				<p> Hey, thank you for visiting! My name is Jason and I currently work at GM while pursuing a master's in Computer Science from UT Austin.
-					As a developer, I'm passionate about full stack development, whether mobile or web based. I'm also interested in databases and operating systems.
+				<p> Hello! I'd like to start off by thanking you for visiting my webpage! My name is Jason and I currently work as a Software Engineer at General Motors while pursuing a master's in Computer Science, with an emphasis in Machine Learning, from UT Austin.
+					As a developer, I'm passionate about full stack development, whether mobile or web based. I'm also interested in databases and of course, machine learning.
 				</p>
 				<p> 
 			    Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my projects/resume to get a better idea of what I've been up to!
