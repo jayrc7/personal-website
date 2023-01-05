@@ -1,5 +1,5 @@
 p {
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 .icon {
-    height: 3vw;
+    height: 2.5vw;
     border-radius: 50%;
     margin-right: .5vw;
 }
@@ -80,8 +80,9 @@ body {
         display: block;
         margin-top: 10px;
         font-size: 1.3vw;
-    }
+    }    
 }
+
 
 /* tablet in portrait mode */
 @media only screen and (min-height: 800px) and (max-width: 1400px) {
