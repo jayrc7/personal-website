@@ -1,31 +1,27 @@
 p {
-    font-size: 20px;
+    font-size: 1vw;
 }
+
 body {
   width: 50%;
   margin: 0 auto;
 }
 
-.header{
+.header {
     padding-top: 30px;
     margin: auto;
 }
 
 .icon {
-    height: 2.5vw;
+    height: 3vw;
     border-radius: 50%;
     margin-right: .5vw;
 }
 
-.Navbar {
-  padding-top: 3vw;
+.me-img {
+    height: 100%;
+    width: 100%;
 }
-
-.NavLink {
-  margin-right: 3vw;
-  font-size: 1vw;
-}
-
 
 .title {
     color: black;
@@ -34,7 +30,7 @@ body {
 
 .subtitle {
     margin-top: -10px;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: grey;
 }
 
@@ -43,28 +39,47 @@ body {
     color: grey;
 }
 
+.grid-height {
+    height: 20vw;
+}
+
+.NavLink {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.3vw;
+}
+
 /* tablet in horizontal mode */
 @media only screen and (max-height: 1200px) and (max-width: 1400px) {
     p {
-        font-size: 1.6vw;
+        font-size: 1.2vw;
     }
 
     .icon {
-        height: 4vw;
-        margin-right: 3vw;
-        margin-bottom: 3vw;
+        height: 3vw;
+        margin-right: 1vw;
     }
 
     .title {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .subtitle {
-        font-size: 3vw;
+        font-size: 1.5vw;
     }
 
     .about-title {
         font-size: 3vw;
+    }
+
+    .grid-height {
+        height: 22vw;
+    }
+
+    .NavLink {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.3vw;
     }
 }
 
@@ -74,16 +89,12 @@ body {
         width: 75%;
     }
 
-    .Navbar {
-        padding-top: 9vw;
-    }
-
     .title {
-        font-size: 6vw;
+        font-size: 3vw;
     }
 
     .subtitle {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     .about-title {
@@ -91,21 +102,21 @@ body {
     }
 
     p {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
     }
 
     .icon {
-        height: 5vw;
-        margin-right: 2vw;
+        height: 3vw;
+        margin-right: 1vw;
+    }
+
+    .grid-height {
+        height: 35vw;
     }
 }
 
 /* phone in portrait mode */
 @media only screen and (max-width: 600px){
-    .about-me {
-        font-size: 10px;
-    }
-
     .icon {
         height: 9vw;
         margin-right: 3vw;
@@ -116,43 +127,51 @@ body {
         width: 100%;
     }
 
-    .Navbar {
-        margin-top: 7vw;
-    }
-
-    .NavLink {
-        font-size: 5vw;
-        margin-right: 6vw;
-    }
-
     p {
         font-size: 4vw;
     }
 
     .subtitle {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .title {
-        font-size: 8vw;
+        font-size: 9vw;
     }
 
     .about-title {
         font-size: 6vw;
     }
+
+    .grid-height {
+        height: 160vw;
+    }
+
+    .NavLink {
+        display: block;
+        margin-top: 10px;
+        font-size: 4.1vw;
+    }
 }
 
 /* phone in landscape mode */
 @media only screen and (min-width:500px) and (max-height: 600px) {
-    .NavLink {
-        font-size: 2vw;
-    }
-
     .title {
         font-size: 4vw;
     }
 
     .about-title {
         margin-top: -10px;
+    }
+
+    .grid-height {
+        height: 10vw;
+    }
+}
+
+/* foldable phones */
+@media only screen and (max-width:00px) {
+    .grid-height {
+        height: 200vw;
     }
 }
