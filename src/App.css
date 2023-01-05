@@ -2,9 +2,11 @@ p {
     font-size: 1.1vw;
 }
 
+
 body {
   width: 50%;
   margin: 0 auto;
+  display: flex;
 }
 
 .header {
@@ -48,8 +50,12 @@ body {
     margin-top: 10px;
     font-size: 1.3vw;
 }
+div {
+    display: block;
+}
 
 /* tablet in horizontal mode */
+/*
 @media only screen and (max-height: 1200px) and (max-width: 1400px) {
     p {
         font-size: 1.2vw;
@@ -85,6 +91,7 @@ body {
 
 
 /* tablet in portrait mode */
+/*
 @media only screen and (min-height: 800px) and (max-width: 1400px) {
     body {
         width: 75%;
@@ -115,6 +122,7 @@ body {
         height: 35vw;
     }
 }
+*/
 
 /* phone in portrait mode */
 @media only screen and (max-width: 600px){
@@ -157,17 +165,6 @@ body {
 
 /* phone in landscape mode */
 @media only screen and (min-width:500px) and (max-height: 600px) {
-    .title {
-        font-size: 4vw;
-    }
-
-    .about-title {
-        margin-top: -10px;
-    }
-
-    .grid-height {
-        height: 10vw;
-    }
 }
 
 /* foldable phones */
