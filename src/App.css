@@ -2,11 +2,15 @@ p {
     font-size: 1.1vw;
 }
 
+.about-me-container {
+    padding-bottom: 15px;
+}
 
 body {
   width: 50%;
   margin: 0 auto;
   display: flex;
+  margin-bottom: 15px;
 }
 
 .header {
@@ -172,4 +176,5 @@ div {
     .grid-height {
         height: 200vw;
     }
+
 }
