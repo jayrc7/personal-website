@@ -21,7 +21,7 @@ class Home extends React.Component {
 							</Grid.Column>
 							<Grid.Column mobile={1} tablet={6} computer={6}>
 								<div>
-									<img className="me-img" src={process.env.PUBLIC_URL + '/me.png'} />
+									<img className="me-img" src={process.env.PUBLIC_URL + '/Me.png'} />
 								</div>
 							</Grid.Column>
 						</Grid.Row>
