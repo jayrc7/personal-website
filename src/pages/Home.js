@@ -34,7 +34,7 @@ class Home extends React.Component {
 						As a developer, I'm passionate about full stack development, whether mobile or web based. I'm also interested in databases and of course, machine learning.
 					</p>
 					<p> 
-					Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my projects/resume to get a better idea of what I've been up to!
+					Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my github and resume to get a better idea of what I've been up to!
 					</p>
 				</div>
 			</div>
