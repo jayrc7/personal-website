@@ -19,7 +19,8 @@ class Home extends React.Component {
 							<Grid.Column mobile={1} tablet={10} computer={10}>
 								<h1 className="title"> Jason Cabrera </h1>
 								<h1 className="subtitle"> Software Engineer at General Motors </h1>
-								<h1 className="subtitle"> Master's in Computer Science at UT Austin</h1>
+								<h1 className="subtitle"> M.S. Computer Science at UT Austin</h1>
+								<h1 className="subtitle"> B.S. Computer Science at UC San Diego</h1>
 								<a title='Check out my projects' href='https://github.com/jayrc7' target='_blank'><img className='icon' src='githubicon.jpg' /></a>
 								<a title='Contact me via email' href='mailto:jrcabrer@ucsd.edu' target='_blank'><img className='icon' src='emailicon.png' /></a>
 								<a title='Connect with me' href='https://www.linkedin.com/in/jasonrcabrera' target='_blank'><img className='icon' src='linkedinicon.png' /></a>
