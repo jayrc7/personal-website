@@ -12,7 +12,6 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Navbar />
 				<div className="header">
 					<Grid className="grid-height" stackable>
 						<Grid.Row>

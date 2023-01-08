@@ -6,7 +6,6 @@ class Projects extends React.Component {
 	render() {
 		return (
 			<>
-				<Navbar />
 				<ProjectDisplay />
 			</>
 		);

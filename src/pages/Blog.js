@@ -11,7 +11,6 @@ class Blog extends React.Component {
     render () {
         return (
             <>
-                <Navbar />
                 <div style={{marginTop: '60px'}}>
                     <h1 className='subtitle'> Blog </h1>
                     <Item.Group>
