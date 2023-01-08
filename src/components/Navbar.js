@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
 import '../App.css';
+import { withRouter } from 'react-router';
 
 class Navbar extends React.Component {
     state = {
@@ -10,6 +11,10 @@ class Navbar extends React.Component {
     handleItemClick = (e, { name }) => {
         console.log('this is the name of the page: ', name);
         this.setState({ activeItem: name });
+        this.props.history.push({
+            pathname: '/' + name,
+            state: { activeItem: name}
+        });
     }
 
     onComponentDidMount() {
@@ -23,8 +28,6 @@ class Navbar extends React.Component {
             <Menu fixed='top' className='navbar'> 
                 <Menu.Item
                     name='home'
-                    as={NavLink}
-                    exact to={'/'}
                     active={activeItem === 'home'}
                     onClick={this.handleItemClick}
                 >
@@ -34,8 +37,6 @@ class Navbar extends React.Component {
                 <Menu.Item
                     name='projects'
                     active={activeItem === 'projects'}
-                    as={NavLink}
-                    exact to={'/projects'}
                     onClick={this.handleItemClick}
                 >
                     Projects
@@ -44,8 +45,6 @@ class Navbar extends React.Component {
                 <Menu.Item
                     name='blog'
                     active={activeItem === 'blog'}
-                    as={NavLink}
-                    exact to={'/blog'}
                     onClick={this.handleItemClick}
                 >
                     Blog
@@ -55,4 +54,4 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
