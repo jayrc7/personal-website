@@ -5,7 +5,6 @@ import { withRouter } from 'react-router';
 
 class Navbar extends React.Component {
     state = {
-        activeItem: localStorage.getItem('activePage')
     }
 
     handleItemClick = (e, { name }) => {
@@ -17,8 +16,10 @@ class Navbar extends React.Component {
         });
     }
 
-    onComponentDidMount() {
+    componentDidMount() {
         console.log(this.props.location);
+        const reloadedPage = this.props.location.pathname.split('/')[1];
+        this.setState({activeItem: reloadedPage === '' ? 'home' : reloadedPage});
     }
 
     render() {
