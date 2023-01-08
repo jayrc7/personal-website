@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 class App extends Component {
   render() {
     return (
-        <Router basename="/personal-website">
+        <Router>
             <Navbar />
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />

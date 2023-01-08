@@ -5,19 +5,19 @@ import { withRouter } from 'react-router';
 
 class Navbar extends React.Component {
     state = {
+        activeItem: localStorage.getItem('activePage')
     }
 
     handleItemClick = (e, { name }) => {
-        console.log('this is the name of the page: ', name);
         this.setState({ activeItem: name });
+        localStorage.setItem('activePage', name);
         this.props.history.push({
-            pathname: '/' + name,
-            state: { activeItem: name}
+            pathname: '/' + (name === 'home' ? '' : name),
+            state: { activeItem: name }
         });
     }
 
     onComponentDidMount() {
-        console.log('hi');
         console.log(this.props.location);
     }
 
