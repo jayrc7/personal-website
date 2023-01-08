@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/ProjectDisplay.css';
+import '../App.css';
 import { proj, tag } from '../content/projects.js';
 import { Button, Transition, Container, Segment, Header, Label} from 
         'semantic-ui-react';
@@ -20,6 +21,10 @@ class ProjectDisplay extends React.Component{
       for(let i = 0; i < tag.tags.length; i++){
         this.state.currTags[tag.tags[i]] = false;
       }
+    }
+
+    componentDidMount() {
+      window.scrollTo(0, 0);
     }
 
     toggleTag = (event, {value}) => {
@@ -63,10 +68,10 @@ class ProjectDisplay extends React.Component{
         const {currTags, activeProjects} = this.state
 
         return(
-            <div style={{marginTop: '30px'}} className="display"> 
+            <div style={{marginTop: '15px'}} className="display"> 
             <br />
             <Header textAlign="left"inverted>
-                <h1 className="projects-title"> Projects </h1>
+                <h1 className="subtitle"> Projects </h1>
             </Header>
             <Container inverted="true" text>
 

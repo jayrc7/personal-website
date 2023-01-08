@@ -2,8 +2,8 @@ p {
     font-size: 1.1vw;
 }
 
-.about-me-container {
-    padding-bottom: 15px;
+.text-container {
+    padding-bottom: 25px;
 }
 
 body {
@@ -13,8 +13,12 @@ body {
   margin-bottom: 15px;
 }
 
+a.header.item-header {
+    display: contents !important;
+}
+
 .header {
-    padding-top: 30px;
+    padding-top: 60px;
     margin: auto;
 }
 
@@ -54,8 +58,20 @@ body {
     margin-top: 10px;
     font-size: 1.3vw;
 }
+
 div {
     display: block;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.blog-item {
+}
+
+.item-container {
+    border-color: black;
 }
 
 /* tablet in horizontal mode */

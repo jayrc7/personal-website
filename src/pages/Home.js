@@ -2,11 +2,17 @@ import React from 'react';
 import '../App.css';
 import ProjectDisplay from "../components/ProjectDisplay";
 import { Grid } from "semantic-ui-react";
+import Navbar from '../components/Navbar';
 
 class Home extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<div className="App">
+				<Navbar />
 				<div className="header">
 					<Grid className="grid-height" stackable>
 						<Grid.Row>
@@ -28,14 +34,19 @@ class Home extends React.Component {
 					</Grid>
 				</div>
 
-				<div className="about-me-container">
+				<div className="text-container">
 					<h1 className="subtitle"> About Me </h1>
 					<p> Hello! I'd like to start off by thanking you for visiting my webpage! My name is Jason and I currently work as a Software Engineer at General Motors while pursuing a master's in Computer Science, with an emphasis in Machine Learning, from UT Austin.
 						As a developer, I'm passionate about full stack development, whether mobile or web based. I'm also interested in databases and of course, machine learning.
 					</p>
 					<p> 
-					Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my github and resume to get a better idea of what I've been up to!
+					Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my website and resume to get a better idea of what I've been up to!
 					</p>
+				</div>
+
+				<div className='text-container'>
+					<h1 className='subtitle'> Recent Updates </h1>
+					<p> 01/07/23 - Added first blog to blog page, added initial projects to project page </p>
 				</div>
 			</div>
 		);
