@@ -9,7 +9,6 @@ class Navbar extends React.Component {
 
     handleItemClick = (e, { name }) => {
         this.setState({ activeItem: name });
-        localStorage.setItem('activePage', name);
         this.props.history.push({
             pathname: '/' + (name === 'home' ? '' : name),
             state: { activeItem: name }
@@ -17,7 +16,6 @@ class Navbar extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props.location);
         const reloadedPage = this.props.location.pathname.split('/')[1];
         this.setState({activeItem: reloadedPage === '' ? 'home' : reloadedPage});
     }
