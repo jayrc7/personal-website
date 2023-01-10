@@ -33,6 +33,14 @@ class Navbar extends React.Component {
                 </Menu.Item>
 
                 <Menu.Item
+                    name='experience'
+                    active={activeItem === 'experience'}
+                    onClick={this.handleItemClick}
+                >
+                    Experience
+                </Menu.Item>
+
+                <Menu.Item
                     name='projects'
                     active={activeItem === 'projects'}
                     onClick={this.handleItemClick}
