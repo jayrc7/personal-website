@@ -16,7 +16,7 @@ class ExperienceAccordion extends React.Component {
         let { activeIndex } = this.state;
         return (
             <>
-                <Accordion styled>
+                <Accordion fluid styled>
                     {
                         this.props.items.map((item, index) => {
                             return (
