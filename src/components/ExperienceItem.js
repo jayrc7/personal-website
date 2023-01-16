@@ -9,7 +9,7 @@ class ExperienceItem extends React.Component {
             <>
                 <Item.Group>
                     <Item>
-                        <Item.Image size='tiny' src={this.props.imageSrc} /> 
+                        <Item.Image size='tiny' src={process.env.PUBLIC_URL + this.props.imageSrc} /> 
                         <Item.Content>
                             <Item.Header as={'h1'} className='item-header'>{this.props.itemHeader}</Item.Header>
                             <Item.Meta>{this.props.itemMeta}</Item.Meta>
