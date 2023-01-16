@@ -18,6 +18,10 @@ a.header.item-header {
     display: contents !important;
 }
 
+h1.header.item-header {
+    display: contents !important;
+}
+
 .header {
     padding-top: 60px;
     margin: auto;
@@ -73,6 +77,14 @@ div {
 
 .item-container {
     border-color: black;
+}
+
+.experience-container {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 20px; 
+    border-style: solid;
+    border-color: lightgrey;
 }
 
 /* tablet in horizontal mode */

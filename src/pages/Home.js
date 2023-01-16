@@ -46,6 +46,7 @@ class Home extends React.Component {
 
 				<div className='text-container'>
 					<h1 className='subtitle'> Recent Updates </h1>
+					<p> 01/16/23 - Added an experience page </p>
 					<p> 01/07/23 - Added first blog to blog page, added initial projects to project page </p>
 				</div>
 			</div>
