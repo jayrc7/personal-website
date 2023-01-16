@@ -5,7 +5,6 @@ class ExperienceAccordion extends React.Component {
     state = {activeIndex: -1};
 
     handleClick = (e, titleProps) => {
-        console.log('this is the titleProps: ', titleProps);
         const { index } = titleProps
         const { activeIndex } = this.state
         const newIndex = activeIndex === index ? -1 : index
@@ -34,11 +33,9 @@ class ExperienceAccordion extends React.Component {
 
                                     </Accordion.Title>
                                     <Accordion.Content active={activeIndex === index}>
-                                        <p>
-                                            A dog is a type of domesticated animal. Known for its loyalty and
-                                            faithfulness, it can be found as a welcome guest in many households
-                                            across the world.
-                                        </p>
+                                        {item.itemInfo.map((content) => {
+                                            return <>- {content}<br/><br/></>;
+                                        })}
                                     </Accordion.Content>
                                 </>
                             );

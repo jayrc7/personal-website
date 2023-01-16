@@ -15,7 +15,7 @@ class ExperienceContainer extends React.Component {
                     dateAdded={this.props.data.startAndEndDates}
                 />
 
-                <ExperienceAccordion items={this.props.data.items} />
+                {this.props.data.items && <ExperienceAccordion items={this.props.data.items} />}
             </div>
         );
     }
