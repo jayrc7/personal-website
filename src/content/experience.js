@@ -18,7 +18,7 @@ let professionalExperience = [
             }, 
             {
                 "itemName": "Tech Stack",
-                "itemInfo": ["Frontend: Angular, ASP.NET Web Pages", "Backend: Java (Spring Boot), C#", "Databases: SQLServer, OracleDB", "Cloud: Hashicorp Vault, Amazon S3, Microsoft Azure, Pivotal Cloud Foundry, Kubernetes, Docker, Kibana"]
+                "itemInfo": ["Frontend: Angular", "Backend: Java (Spring Boot)", "Databases: PostgresDB", "Cloud: Hashicorp Vault, Amazon S3, Pivotal Cloud Foundry, Kubernetes, Docker, Kibana"]
             }
         ]
     }
