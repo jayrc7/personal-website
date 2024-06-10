@@ -29,7 +29,7 @@ let academicExperience = [
         "title": "UT Austin", 
         "role": "Part Time Student - Expected Graduation in 2025",
         "description": "Master's of Science - Computer Science",
-        "startAndEndDates": "Current Major GPA: 4.0",
+        "startAndEndDates": "Current Major GPA: 3.63",
         "imgSrc": "/utAustin.png",
         "items": [
             {
