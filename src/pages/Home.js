@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
-import ProjectDisplay from "../components/ProjectDisplay";
 import { Grid } from "semantic-ui-react";
-import Navbar from '../components/Navbar';
 
 class Home extends React.Component {
 	componentDidMount() {
@@ -20,14 +18,14 @@ class Home extends React.Component {
 								<h1 className="subtitle"> Software Engineer at General Motors </h1>
 								<h1 className="subtitle"> M.S. Computer Science at UT Austin</h1>
 								<h1 className="subtitle"> B.S. Computer Science at UC San Diego</h1>
-								<a title='Check out my projects' href='https://github.com/jayrc7' target='_blank'><img className='icon' src='githubicon.jpg' /></a>
-								<a title='Contact me via email' href='mailto:jrcabrer@ucsd.edu' target='_blank'><img className='icon' src='emailicon.png' /></a>
-								<a title='Connect with me' href='https://www.linkedin.com/in/jasonrcabrera' target='_blank'><img className='icon' src='linkedinicon.png' /></a>
-								<a className="NavLink" href={process.env.PUBLIC_URL + '/Cabrera, Jason Resume.pdf'} target='_blank'>View Resume >></a>
+								<a title='Check out my projects' href='https://github.com/jayrc7' rel="noreferrer" target='_blank'><img alt="Github" className='icon' src={process.env.PUBLIC_URL + '/githubicon.jpg'} /></a>
+								<a title='Contact me via email' href='mailto:jrcabrer@ucsd.edu' rel="noreferrer" target='_blank'><img alt="Email" className='icon' src={process.env.PUBLIC_URL + '/emailicon.png'} /></a>
+								<a title='Connect with me' href='https://www.linkedin.com/in/jasonrcabrera' rel="noreferrer" target='_blank'><img alt="LinkedIn" className='icon' src={process.env.PUBLIC_URL + '/linkedinicon.png'} /></a>
+								<a className="NavLink" href={process.env.PUBLIC_URL + '/Cabrera, Jason Resume.pdf'} rel="noreferrer" target='_blank'>View Resume >></a>
 							</Grid.Column>
 							<Grid.Column mobile={1} tablet={6} computer={6}>
 								<div>
-									<img className="me-img" src={process.env.PUBLIC_URL + '/Me.png'} />
+									<img alt="" className="me-img" src={process.env.PUBLIC_URL + '/Me.png'} />
 								</div>
 							</Grid.Column>
 						</Grid.Row>
@@ -42,13 +40,6 @@ class Home extends React.Component {
 					<p> 
 					Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my website and resume to get a better idea of what I've been up to!
 					</p>
-				</div>
-
-				<div className='text-container'>
-					<h1 className='subtitle'> Recent Updates </h1>
-					<p> 06/09/24 - Updated resume and experience page</p>
-					<p> 01/16/23 - Added an experience page </p>
-					<p> 01/07/23 - Added first blog to blog page, added initial projects to project page </p>
 				</div>
 			</div>
 		);

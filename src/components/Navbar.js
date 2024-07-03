@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import '../App.css';
-import { withRouter } from 'react-router';
+import { withRouter } from '../components/withRouter';
 
 class Navbar extends React.Component {
     state = {
@@ -9,14 +9,14 @@ class Navbar extends React.Component {
 
     handleItemClick = (e, { name }) => {
         this.setState({ activeItem: name });
-        this.props.history.push({
-            pathname: '/' + (name === 'home' ? '' : name),
-            state: { activeItem: name }
-        });
+        this.props.navigate(
+            '/' + (name === 'home' ? '' : name),
+            { state: { activeItem: name } }
+        );
     }
 
     componentDidMount() {
-        const reloadedPage = this.props.location.pathname.split('/')[1];
+        const reloadedPage = window.location.pathname.split('/')[1];
         this.setState({activeItem: reloadedPage === '' ? 'home' : reloadedPage});
     }
 

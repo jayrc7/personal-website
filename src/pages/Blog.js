@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import { Item, Divider } from 'semantic-ui-react';
 import '../App.css';
 

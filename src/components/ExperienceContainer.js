@@ -1,6 +1,5 @@
 import React from 'react';
 import ExperienceItem from './ExperienceItem';
-import { Accordion, Icon, Image } from 'semantic-ui-react';
 import ExperienceAccordion from './ExperienceAccordion';
 
 class ExperienceContainer extends React.Component {
