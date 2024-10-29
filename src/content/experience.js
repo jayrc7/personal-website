@@ -27,7 +27,7 @@ let professionalExperience = [
 let academicExperience = [
     {
         "title": "UT Austin", 
-        "role": "Part Time Student - Expected Graduation in 2025",
+        "role": "Part Time Student - Expected Graduation in Dec 2024",
         "description": "Master's of Science - Computer Science",
         "startAndEndDates": "Current Major GPA: 3.63",
         "imgSrc": "/utAustin.png",
@@ -35,8 +35,8 @@ let academicExperience = [
             {
                 "itemName": "Courses",
                 "itemInfo": ["Advanced Operating Systems", "Case Studies of Machine Learning", "Advanced Linear Algebra for Computing",
-                    "Deep Learning", "Virtualization", "Reinforcement Learning", "Machine Learning", "Android"
-                ]
+                    "Deep Learning", "Virtualization", "Reinforcement Learning", "Machine Learning", "Android",
+                    "Natural Language Processing", "Planning, Search, and Reasoning Under Uncertainty"]
             }
         ]
     },
