@@ -52,6 +52,13 @@ h1.header.item-header {
     color: grey;
 }
 
+.subtitle-2 {
+    margin-top: -5px;
+    font-size: 1.2vw;
+    color: grey;
+    margin-bottom: 20px;
+}
+
 .about-title {
     font-size: 25px;
     color: grey;
