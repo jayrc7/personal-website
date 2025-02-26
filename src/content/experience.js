@@ -27,9 +27,9 @@ let professionalExperience = [
 let academicExperience = [
     {
         "title": "UT Austin", 
-        "role": "Part Time Student - Expected Graduation in Dec 2024",
+        "role": "Graduated on December 2024",
         "description": "Master's of Science - Computer Science",
-        "startAndEndDates": "Current Major GPA: 3.63",
+        "startAndEndDates": "",
         "imgSrc": "/utAustin.png",
         "items": [
             {
@@ -44,7 +44,7 @@ let academicExperience = [
         "title": "UC San Diego", 
         "role": "Graduated on June 2021",
         "description": "Bachelors of Science - Computer Science",
-        "startAndEndDates": "Major GPA: 3.69",
+        "startAndEndDates": "",
         "imgSrc": "/ucSanDiego.png",
         "items": [
             {
