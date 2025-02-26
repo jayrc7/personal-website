@@ -3,11 +3,10 @@ import ProjectDisplay from '../components/ProjectDisplay';
 
 class Projects extends React.Component {
 	render() {
-		return (
-			<>
-				<ProjectDisplay />
-			</>
-		);
+		return <div className="App">
+			<ProjectDisplay />
+		</div> ;
+
 	}
 }
 
