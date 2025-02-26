@@ -37,7 +37,9 @@ class Home extends React.Component {
 					<p>
 						I recently acquired my master's in Computer Science, with an emphasis in Machine Learning, from UT Austin.
 						As a developer, I'm passionate about building software that can make a positive impact on people's lives. Not only do I love building software, but I go above and beyond to make sure that the software being delivered is of the highest quality my team and myself can produce. 
-						I have experience in full-stack development, devops, machine learning, and software engineering best practices. As my career progresses, I am shifting more towards DevOps, machine learning, data engineering, and MLOps.
+						I have experience in full-stack development, devops, machine learning, and software engineering best practices. 
+					</p>
+					<p> As my career matures, I am shifting more towards DevOps, machine learning, data engineering, and MLOps.
 						Recently, I have been spending a lot of time learning more about neural networks and how they work under the hood. I also spend time learning probability, statistics, and SQL while making sure that my knowledge from my master's program is still fresh in my mind.
 					</p>
 					<p> 
