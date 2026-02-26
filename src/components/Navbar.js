@@ -1,63 +1,19 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
-import '../App.css';
-import { withRouter } from '../components/withRouter';
+import { NavLink } from 'react-router-dom';
 
-class Navbar extends React.Component {
-    state = {
-    }
+const Navbar = () => {
+    return (
+        <nav className="bg-gray-800 p-4 fixed w-full top-0 z-10">
+            <div className="container mx-auto flex justify-between items-center">
+                <div className="flex space-x-4">
+                    <NavLink to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</NavLink>
+                    <NavLink to="/experience" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</NavLink>
+                    <NavLink to="/projects" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</NavLink>
+                    <NavLink to="/blog" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</NavLink>
+                </div>
+            </div>
+        </nav>
+    );
+};
 
-    handleItemClick = (e, { name }) => {
-        this.setState({ activeItem: name });
-        this.props.navigate(
-            '/' + (name === 'home' ? '' : name),
-            { state: { activeItem: name } }
-        );
-    }
-
-    componentDidMount() {
-        const reloadedPage = window.location.pathname.split('/')[1];
-        this.setState({activeItem: reloadedPage === '' ? 'home' : reloadedPage});
-    }
-
-    render() {
-        const { activeItem } = this.state;
-        return (
-            <Menu fixed='top' className='navbar'> 
-                <Menu.Item
-                    name='home'
-                    active={activeItem === 'home'}
-                    onClick={this.handleItemClick}
-                >
-                    Home
-                </Menu.Item>
-
-                <Menu.Item
-                    name='experience'
-                    active={activeItem === 'experience'}
-                    onClick={this.handleItemClick}
-                >
-                    Experience
-                </Menu.Item>
-
-                <Menu.Item
-                    name='projects'
-                    active={activeItem === 'projects'}
-                    onClick={this.handleItemClick}
-                >
-                    Projects
-                </Menu.Item>
-
-                <Menu.Item
-                    name='blog'
-                    active={activeItem === 'blog'}
-                    onClick={this.handleItemClick}
-                >
-                    Blog
-                </Menu.Item>        
-            </Menu>
-        );
-    }
-}
-
-export default withRouter(Navbar);
+export default Navbar;

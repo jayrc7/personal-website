@@ -1,36 +1,40 @@
 import React from 'react';
-import ExperienceContainer from '../components/ExperienceContainer';
-import '../App.css';
 import { professionalExperience, academicExperience, mentorshipExperience } from '../content/experience.js';
-import { Container } from 'semantic-ui-react';
+import ExperienceItem from '../components/ExperienceItem';
 
-class Experience extends React.Component {
-    render() {
-        return (
-            <Container text style={{marginTop: '60px'}}> 
-                <h1 className='subtitle'> Professional Experience</h1>
-                {
-                    professionalExperience.map((experience) => {
-                        return <ExperienceContainer data={experience} />
-                    })
-                }
-                <h1 className='subtitle'> Academic Experience</h1>
-                {
-                    academicExperience.map((experience) => {
-                        return <ExperienceContainer data={experience} />
-                    })
-                }
-                <h1 className='subtitle'> Mentorship Experience</h1>
-                {
-                    mentorshipExperience.map((experience) => {
-                        return <ExperienceContainer data={experience} />
-                    })
-                }
-
-                <br />
-            </Container>
-        );
-    }
-}
+const Experience = () => {
+    return (
+        <div className="bg-gray-100 min-h-screen">
+            <main className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <div className="space-y-12">
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Professional Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {professionalExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Academic Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {academicExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Mentorship Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {mentorshipExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    );
+};
 
 export default Experience;
