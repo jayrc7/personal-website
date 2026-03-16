@@ -2,7 +2,7 @@ let professionalExperience = [
     {
         "title": "General Motors",
         "role": "Full Stack Software Engineer",
-        "description": "Worked on internal applications, microservices, and in-vehicle applications.", 
+        "description": "Developing an internal application, full stack developer and contributing to the DevOps and System Architecture of the application.",
         "startAndEndDates": "2021-Present",
         "imgSrc": "/generalMotors.png",
         "items": [

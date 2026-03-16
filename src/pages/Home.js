@@ -1,12 +1,26 @@
 import React from 'react';
+import { professionalExperience, academicExperience, mentorshipExperience } from '../content/experience.js';
+import ExperienceItem from '../components/ExperienceItem';
 
 const Home = () => {
     React.useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    const posts = [
+        {
+            title: 'Building a Movie Recommender System Using Movie Ratings and the Surprise Scikit Library',
+            href: process.env.PUBLIC_URL + '/Recommender Systems Research Paper - Jason Cabrera.pdf',
+            description: 'My first machine learning research paper! Underwent research on which prediction algorithm to use for a collaborative-based filtering movie recommender system.',
+            date: 'Jan 7, 2022',
+            category: { name: 'Research Paper', href: '#' },
+            imageUrl: process.env.PUBLIC_URL + '/CaseStudiesCourseImg.jpeg',
+        },
+    ];
+
     return (
         <div className="bg-gray-100 min-h-screen">
+            {/* Hero / About */}
             <main className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2">
@@ -24,7 +38,8 @@ const Home = () => {
                             Software Engineer at General Motors
                         </p>
                         <p className="mt-1 text-md text-gray-500">
-                            Determined to become a specialist in Machine Learning, MLOps, DevOps, and Data Engineering
+                            Software Engineer with a passion for building impactful software, specializing in full-stack development and DevOps. Exploring the intersection of machine learning and software engineering to create innovative solutions.
+                            
                         </p>
                         <div className="mt-6 flex space-x-4">
                             <a href="https://github.com/jayrc7" rel="noreferrer" target="_blank" className="text-gray-400 hover:text-gray-500">
@@ -52,25 +67,75 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </main>
 
-                <div className="mt-16">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">About Me</h2>
-                    <div className="mt-6 space-y-6 text-gray-600">
-                        <p>
-                            Hello! I'd like to start off by thanking you for visiting my webpage! My name is Jason and I currently work as a Software Engineer at General Motors. At GM, I work on an internal application doing full stack work and I also lead the devops side of my team.
-                        </p>
-                        <p>
-                            I recently acquired my master's in Computer Science, with an emphasis in Machine Learning, from UT Austin. As a developer, I'm passionate about building software that can make a positive impact on people's lives. Not only do I love building software, but I go above and beyond to make sure that the software being delivered is of the highest quality my team and myself can produce. I have experience in full-stack development, devops, machine learning, and software engineering best practices.
-                        </p>
-                        <p>
-                            As my career matures, I am shifting more towards DevOps, machine learning, data engineering, and MLOps. Recently, I have been spending a lot of time learning more about neural networks and how they work under the hood. I also spend time learning probability, statistics, and SQL while making sure that my knowledge from my master's program is still fresh in my mind.
-                        </p>
-                        <p>
-                            Some things that I enjoy doing on my free time are playing and watching soccer, spending time with loved ones, and learning new things whether it's software engineering related or not. Feel free to look through my website and resume to get a better idea of what I've been up to!
-                        </p>
+            {/* Experience */}
+            <section className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <div className="space-y-12">
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Professional Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {professionalExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Academic Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {academicExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Mentorship Experience</h1>
+                        <div className="mt-6 space-y-8">
+                            {mentorshipExperience.map((experience, index) => (
+                                <ExperienceItem key={index} data={experience} />
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </main>
+            </section>
+
+            {/* Blog */}
+            <section className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <div className="text-center">
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Blog</h1>
+                    <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                        A collection of my thoughts and writings.
+                    </p>
+                </div>
+
+                <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                    {posts.map((post) => (
+                        <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div className="flex-shrink-0">
+                                <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+                            </div>
+                            <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                                <div className="flex-1">
+                                    <p className="text-sm font-medium text-indigo-600">
+                                        <a href={post.category.href} className="hover:underline">
+                                            {post.category.name}
+                                        </a>
+                                    </p>
+                                    <a href={post.href} target="__blank" className="block mt-2">
+                                        <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                                        <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                                    </a>
+                                </div>
+                                <div className="mt-6 flex items-center">
+                                    <div className="text-sm text-gray-500">
+                                        <time dateTime={post.date}>{post.date}</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 };
